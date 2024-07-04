@@ -20,7 +20,6 @@ This approach iterates through all possible pairs of words in the input array an
 
 1. This assumes that the machine has node and VSCode installed.
 2. Open\Clone this repo in VSCode. In my case this is `D:\code\amihan-test`.
-3. Open a terminal in VSCode. Hotkey is
-   `Ctrl+Shift+~` for Windows and `Cmd+Shift+~` for macOS.
+3. Open a terminal in VSCode. Hotkey is `Ctrl + Shift + ~` for Windows and `Ctrl + ~` for macOS.
 4. Type `node .\problem-set-1\palindromePairs.js` on the terminal. Press Enter.
 5. The results of the program are displayed on the console with corresponding test cases.
