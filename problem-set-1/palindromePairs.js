@@ -74,18 +74,18 @@ function runTestCases() {
 
   testCases.forEach((testCase, index) => {
     const result = palindromePairs(testCase.input);
-    console.log(`Test case ${index + 1}:`);
-    console.log(`Input: ${JSON.stringify(testCase.input)}`);
-    console.log(`Expected: ${JSON.stringify(testCase.expected)}`);
-    console.log(`Result: ${JSON.stringify(result)}`);
+    console.log(`Test Case ${index + 1}:`);
+    console.log(`Input:\t\t${JSON.stringify(testCase.input)}`);
+    console.log(`Expected:\t${JSON.stringify(testCase.expected)}`);
+    console.log(`Result:\t\t${JSON.stringify(result)}`);
     console.log(
-      `Status: ${
+      `Status:\t\t${
         JSON.stringify(result) === JSON.stringify(testCase.expected)
           ? "PASSED"
           : "FAILED"
       }`
     );
-    console.log("---");
+    console.log("---------------------------------------------");
   });
 }
 

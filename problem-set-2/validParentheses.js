@@ -34,14 +34,14 @@ function runTestCases() {
 
   testCases.forEach((testCase, index) => {
     const result = isValid(testCase.input);
-    console.log(`Test case ${index + 1}:`);
-    console.log(`Input: "${testCase.input}"`);
-    console.log(`Expected: ${testCase.expected}`);
-    console.log(`Result: ${result}`);
+    console.log(`Test Case ${index + 1}:`);
+    console.log(`Input:\t\t"${testCase.input}"`);
+    console.log(`Expected:\t${testCase.expected}`);
+    console.log(`Result:\t\t${result}`);
     console.log(
-      `Status: ${result === testCase.expected ? "PASSED" : "FAILED"}`
+      `Status:\t\t${result === testCase.expected ? "PASSED" : "FAILED"}`
     );
-    console.log("---");
+    console.log("------------------------------");
   });
 }
 
