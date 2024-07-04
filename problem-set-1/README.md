@@ -7,13 +7,14 @@ the concatenation of the two words, i.e., `words[i] + words[j]`, forms a palindr
 
 ## Solution Overview
 
-This approach iterates through all possible pairs of words in the input array.
-All characters in each combined word when checking for palindromes, following these steps:
+This approach iterates through all possible pairs of words in the input array and iterates through all characters in each combined word when checking for palindromes, following these steps:
 
 1. Define an isPalindrome function to check if a string is a palindrome.
-2. Iterate through all pairs of words in the input array.
-3. For each pair, concatenate the words `(words[i] + words[j])` and check if the result is a palindrome.
-4. If it is, add the indices of the words to the result list.
+2. Define another function, responsible for checking for palindrome pairs.
+3. Iterate through all pairs of words in the input array.
+4. For each pair, concatenate the words `(words[i] + words[j])` and call isPalindrome to check if the result is a palindrome.
+5. If it is, add the indices of the words to the result list.
+6. Return this result to where the function was called.
 
 ## Instructions to Run the Code
 
